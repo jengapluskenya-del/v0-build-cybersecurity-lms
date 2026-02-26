@@ -1,8 +1,12 @@
-import { updateSession } from '@/lib/supabase/middleware'
-import { type NextRequest } from 'next/server'
+import { type NextRequest, NextResponse } from 'next/server'
+import { verifySessionToken } from '@/lib/auth'
 
 export async function middleware(request: NextRequest) {
-  return await updateSession(request)
+  const response = NextResponse.next()
+  
+  // For now, just pass through - session validation will happen in protected routes
+  // We'll verify tokens when accessing protected pages
+  return response
 }
 
 export const config = {

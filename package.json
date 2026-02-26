@@ -9,8 +9,8 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@supabase/ssr": "^0.6.1",
-    "@supabase/supabase-js": "^2.49.1",
+    "@neondatabase/serverless": "^0.9.4",
+    "bcryptjs": "^2.4.3",
     "swr": "^2.3.3",
     "@hookform/resolvers": "^3.9.1",
     "@vercel/analytics": "1.6.1",
