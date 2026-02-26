@@ -16,8 +16,7 @@ async function runMigrations() {
     // Read and execute migration files in order
     const migrationFiles = [
       '001_create_schema.sql',
-      '002_enhance_schema.sql',
-      '003_seed_test_user.sql'
+      '002_seed_test_user.sql'
     ];
 
     for (const file of migrationFiles) {
